@@ -95,3 +95,90 @@ section:not(#three) {
         /* 11 */
         grid-auto-rows: 100px;
     }
+    /* BONUS */
+    /* 1 */
+    #one{
+        flex-direction: column-reverse ;
+    }
+    /* 2 */
+   
+    #two #brown{
+        order: -1;
+
+        /* 3 */
+        align-self: flex-start;
+    }
+
+
+    #two #purple{
+        align-self:flex-end;
+        justify-self: right;
+
+    }
+/* 4 */
+
+/* #three #p-one{
+    grid-column: 1 / 3;
+}
+
+#three #p-two{
+    grid-column: 3 / 5;
+    
+}
+#three #p-three{
+    grid-row: 2 / 4;
+
+}
+#three #p-four{
+    grid-row: 2 / 4;
+    grid-column: 2 / 4
+
+}
+#three #p-five{
+    grid-row: 2 / 5;
+    
+}
+#three #p-six{
+    grid-column:1 / 4;
+
+}
+
+#three #p-eight{
+    grid-column: 2 / 5;
+
+} */
+
+/* Whith Grid Area property */
+
+#three{
+    grid-template-areas: "one one two two"
+    "three four four five"
+    "three four four five"
+    "six six six five"
+    "seven eight eight eight";
+}
+
+#p-one{
+    grid-area: one;
+}
+#p-two{
+    grid-area: two;
+}
+#p-three{
+    grid-area: three;
+}
+#p-four{
+    grid-area: four;
+}
+#p-five{
+    grid-area: five;
+}
+#p-six{
+    grid-area: six;
+}
+#p-seven{
+    grid-area: seven;
+}
+#p-eight{
+    grid-area: eight;
+}
